@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <img src="images/logo.png" alt="Blog Logo" class="logo">
+      <h1>Admin Panel</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Admin Content -->
+  <main>
+    <div class="container">
+      <h2>Manage Posts</h2>
+
+      <div class="form-container">
+        <h3>Create a New Post</h3>
+        <form id="new-post-form">
+          <label for="post-title">Post Title:</label>
+          <input type="text" id="post-title" placeholder="Post Title" required>
+
+          <label for="post-content">Post Content:</label>
+          <textarea id="post-content" placeholder="Write your content here..." required></textarea>
+
+          <button type="submit">Create Post</button>
+        </form>
+      </div>
+
+      <h3>Current Posts</h3>
+      <div id="posts-list">
+        <!-- Current posts will be listed here dynamically -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 The Curios Mind. Admin Panel</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
